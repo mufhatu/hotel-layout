@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <meta charset="utf-8">
+       <title>CANVAS HOTEL</title>
+       <meta name="viewport" content="width=device-width,initial-scale=1">
+	   
+	   <!--custom style sheets-->
+	   <link rel="stylesheet" href="css/style.css" type="text/css">
+	   <link rel="stylesheet" href="css/script.js" type="text/css">
+	   <link rel="stylesheet" href="css/images" type="text/css">
+	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	   
+	   <!--font-awesome icons-->
+       <script src="https://use.fontawesome.com/0e50a44159.js"></script>
+
+	   
+  <head>
+  <body>
+     <!--top nav-->
+  <div class="container top-nav">
+              <a  class="links" href="index.html">HOME</a>
+               <a class="links" href="fqas.html">FAQS</a>
+                 <a class="links" href="contacts.html">CONTACTS</a>
+        <div class="currency">
+            <button class="btn">USD<i class="fa fa-caret-down"></i> </button>
+        <div class="currency-list">
+              <a href="#">USD</a>
+                <a href="#">ZAR</a>
+              <a href="#">EURO</a>
+        </div>
+     </div>
+	 
+	 <div class="social-links">
+	        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> </a>
+			  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a>
+			    <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> </a>
+				<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> </a>
+			  <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> </a>
+		    <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+						
+	 
+	 </div>
+     </div> 
+	 
+	 
+	 <!--main menu-->
+     <hr width="100%" size="1" color="white" noshade>  
+     <header class="container">
+	      <!---Website logo-->
+		 <a href="#home" class=""> <img href="#home" class="nav-logo"src="images/logo.png"></a>
+          <!--Menu-->
+     <!-- Top Navigation Menu -->
+   <nav class="nav-responsive" id="nav-responsive">
+
+          <ul id="nav-responsive">
+
+                <li class="nav-links active"><a href="index.html" ><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+
+                 <li class="nav-links"><a href="flights.html"><i class="fa fa-plane" aria-hidden="true"></i> Flights</a></li>
+
+                  <li class="nav-links"><a href="hotels.html"><i class="fa fa-bed" aria-hidden="true"></i> HOTELS</a></li>
+				  
+				  <li class="nav-links"><a href="holidays.html" ><i class="fa fa-gift" aria-hidden="true"></i> Holidays</a></li>
+
+                 <li class="nav-links"><a href="blog.html" ><i class="fa fa-pencil" aria-hidden="true"></i> Blog</a></li>
+
+                
+                <li class="nav-links"><a href="tel:18001052541" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i> 1800 105 2541</a></li> 
+     
+        </ul>
+    
+      </nav> 
+	  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+	  	   <!--toggle bar-->
+	
+	 
+    </header>
+       
+       
+    <div class="container">
+	  <div class="row">
+	    <div class="tabContainer">
+
+          <div class="buttonContainer">
+
+             <button onclick="showPanel(0,'#660000')"><i class="fa fa-plane" aria-hidden="true"></i> Flights</button>
+             <button onclick="showPanel(1,'#660000')"><i class="fa fa-bed" aria-hidden="true"></i> Hotels</button>
+             <button onclick="showPanel(2,'#660000')"><i class="fa fa-floppy-o" aria-hidden="true"></i> Flights & Hotels</button>
+             <button onclick="showPanel(3,'#660000')"><i class="fa fa-gift" aria-hidden="true"></i> Holidays</button>
+
+          </div>
+
+          <div class="tabPanel">
+		     <div style="float:left">
+			     <h2>Book Your Flights</h2>
+			 </div>
+			 <div class="buttons">
+			     <button class="btn ">Domestic</button>
+				 <button class="btn">International</button>
+			 </div>
+			<form class="form" action="#">
+			  <div class="form-input1"> 			   
+                <label >FROM</label><br>
+                <input type="text" id="fromplace" name="fromplace" placeholder="E.g Melbourne,Australia"><br>
+			  </div>
+			  
+              <div class="form-input2">			  
+                <label >TO</label><br>
+                <input type="text" id="toplace" name="toplace" placeholder="E.g New York, United State"><br><br>
+			  </div>
+			 
+             <div class="frm1"> 			   
+                <label >DEPARTURE</label><br>
+                <input type="date" id="departure" name="departure" placeholder="MM/DD/YY"><br>
+			  </div>
+              <div class="frm2">			  
+                <label >RETURN</label><br>
+                <input type="date" id="return" name="return" placeholder="MM/DD/YY"><br><br>
+			  </div> 
+			  <div class="frm3">			  
+                <label >ADULTS</label><br>
+                <input type="text" id="adult" name="adult" placeholder="2"><br><br>
+			  </div> 
+			  	<div class="form-input1">		  
+                <button style="display:block"class="btn" type="submit" value="Submit">Search Flights</button>
+				</div>
+				<div class="form-input2">
+				 <button style="background:#ffff;color:#660000;border:none;outline:none;font-size:20px;text-decoration:underline;">Advanced Search</button>
+				</div>
+            </form> 
+		
+		  </div>
+
+          <div class="tabPanel">
+		     <div style="float:left">
+			     <h2>Book Your Rooms</h2>
+			 </div>
+			
+			<form class="form" action="#">
+			  <div class="form-input1"> 			   
+                <label >BEDROOMS</label><br>
+                <input type="text" id="beds" name="beds" placeholder="3 bedrooms"><br>
+			  </div>
+			  
+              <div class="form-input2">			  
+                <label >BATHROOMS</label><br>
+                <input type="text" id="baths" name="baths" placeholder="2 bath"><br><br>
+			  </div>
+			 
+             <div class="frm1"> 			   
+                <label >LIVING ROOMS</label><br>
+                <input type="text" id="living" name="living" placeholder="1 living room"><br>
+			  </div>
+              <div class="frm2">			  
+                <label >KITCHENS</label><br>
+                <input type="text" id="kitchen" name="kitchen" placeholder="1 kitchen"><br><br>
+			  </div> 
+			  <div class="frm3">			  
+                <label >STUDY</label><br>
+                <input type="text" id="study" name="study" placeholder="2 study rooms"><br><br>
+			  </div> 
+			  	<div class="form-input1">		  
+                <button style="display:block"class="btn" type="submit" value="Submit">Search Flights</button>
+				</div>
+				<div class="form-input2">
+				 <button style="background:#ffff;color:#660000;border:none;outline:none;font-size:20px;text-decoration:underline;">Advanced Search</button>
+				</div>
+            </form> 
+		  </div>
+
+          <div class="tabPanel">
+		   <div style="float:left">
+			     <h2>PLease Save Your Flights AND Hotels Search</h2>
+			 </div>
+		
+			<form class="form" action="#">		      
+			  	<div class="form-input1">		  
+                <button style="display:block"class="btn" type="submit" value="Submit">Save Your Search</button>
+				</div>  				
+            </form> 
+		  </div>
+
+          <div class="tabPanel">
+		   <div style="float:left">
+			     <h2>Book Your Holidays</h2>
+			 </div>
+			
+			<form class="form" action="#">
+			  <div class="form-input1"> 			   
+                <label >HOLIDAY DATE</label><br>
+                <input type="date" id="date" name="date" placeholder="date"><br>
+			  </div>
+			  
+              <div class="form-input2">			  
+                <label >NAME OF HOLIDAY</label><br>
+                <input type="text" id="hname" name="hname" placeholder="holiday name"><br><br>
+			  </div>
+			         
+			
+			  	<div class="form-input1">		  
+                <button style="display:block"class="btn" type="submit" value="Submit">Holiday Search</button>
+				</div>
+				
+            </form> 
+		  </div>
+
+        </div>
+
+
+			</div>
+	       
+		   </div> 	   
+	   
+	   </div>
+	   
+<script>
+	   
+var tabButtons=document.querySelectorAll(".tabContainer .buttonContainer button");
+
+var tabPanels=document.querySelectorAll(".tabContainer  .tabPanel");
+
+
+
+function showPanel(panelIndex,colorCode) {
+
+    tabButtons.forEach(function(node){
+
+        node.style.backgroundColor="";
+
+        node.style.color="";
+
+    });
+
+    tabButtons[panelIndex].style.backgroundColor=colorCode;
+
+    tabButtons[panelIndex].style.color="white";
+
+    tabPanels.forEach(function(node){
+
+        node.style.display="none";
+
+    });
+
+    tabPanels[panelIndex].style.display="block";
+
+    tabPanels[panelIndex].style.backgroundColor="white";
+
+}
+
+showPanel(0,'#660000');
+	
+
+function myFunction() {
+  var x = document.getElementById("nav-responsive");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+ 
+</script>
+  </body> 
+
+</html>

@@ -1,0 +1,559 @@
+body{
+	font-family:Roboto;
+	color:#fff;
+	font-size:17px;
+	background-image:url('../images/2.jpg');
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+	
+	animation-name:animate;
+	animation-direction:alternative-reverse;
+	animation-duration:30s;
+	animation-fill-mode:forwrds;
+	animation-iteration-count:infinite;
+	animation-play-state:running;
+	animation-timing-function:ease-in-out;
+}
+
+@keyframes animate{
+	/**/
+	0%{
+		background-image:url('../images/2.jpg');
+	}
+	20%{
+    	background-image:url('../images/3.jpg');
+	}
+	40%{
+		background-image:url('../images/1.jpg');
+	}
+	60%{
+		background-image:url('../images/3.jpg');
+	}
+	0%{
+		background-image:url('../images/2.jpg');
+	}
+}
+
+.container{
+	width:80%;
+	margin:0px auto 0;
+	display:table;
+	box-sizing:border-box;
+	height:auto;
+}
+
+.row{
+	margin:10px 0;
+	transition: .5s;
+}
+
+a{
+	color:#fff;
+	display-style:none;
+}
+
+/* ------------------------------------------
+  top nav
+--------------------------------------------- */
+.top-nav {
+  overflow: hidden;
+  margin-bottom:-10px;
+  margin-top:-6px;
+  
+}
+
+.top-nav a{
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ 
+}
+
+.links{
+  border-right:1px solid #fff;
+}
+
+.currency {
+  float: left;
+  overflow: hidden;
+}
+
+.currency .btn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.currency-list {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.currency-list a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.currency:hover .currency-list {
+  display: block;
+}
+
+.social-links{
+	float:right;
+}
+.social-links a{
+	border-left:none;
+}
+/* ------------------------------------------
+  main menu
+--------------------------------------------- */
+
+
+
+header{
+	height:50px;
+	width: 100%;
+
+}
+
+.nav-logo{
+	margin-top:0px;
+	width:150px;
+	float:left;	
+	height:90px;
+	
+	}
+
+
+
+.nav-responsive{
+	line-height:35px;
+	float:right;
+	margin-top:28px;
+	padding:0px;
+}
+
+.nav-responsive ul{
+	list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-responsive ul li{
+	display:inline;
+	padding:3px;
+	margin-left:60x;
+}
+
+.nav-responsive ul li a{
+    color:#ffffff;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:17px;
+    font-weight:400;
+    margin:14px 16px;
+}
+
+.active{
+    display:block;
+	border-style:solid;
+    border-color:white;
+	border-width:1px;
+}
+
+.nav-responsive ul li a:hover{
+	border-bottom:1px solid white;  
+}
+
+/* ------------------------------------------
+  menu toggler
+--------------------------------------------- */
+a.icon {
+ 
+  color:grey;
+  display: none;
+  position: absolute;
+  font-size:30px;
+ 
+}
+
+
+
+/* ------------------------------------------
+ tab & intro
+--------------------------------------------- */
+
+.tabContainer{
+	margin-top:40px;
+    width: 70%;
+    height: 400px;
+
+}
+
+.tabContainer .buttonContainer{
+    height: 15%;
+	border-bottom:1px solid #660000;
+
+}
+
+.tabContainer .buttonContainer button{
+    width: 20%;
+	color:#ffffff;
+    height: 100%;
+    float: left;
+	border:none;
+    border-right:1px solid #ffffff;
+    outline:none;
+    cursor: pointer;
+    padding: 5px;
+    font-family: roboto;
+    font-size: 17px;
+    background-color: #808080;
+	
+
+}
+
+.tabContainer .buttonContainer button:hover{
+
+    background-color: #660000;
+
+}
+
+.tabContainer .tabPanel{
+
+    height: 85%;
+    background-color: gray;
+    color: #333;
+    text-align: left;
+    padding:10px;
+	box-sizing: border-box;
+    font-family: roboto;
+    font-size:15px;
+    display: none;
+
+}
+.buttons{
+	float:right;
+	padding-top:25px;
+}
+
+
+.btn{
+	outline:none;
+	border:none;
+	padding:10px;
+	cursor:pointer;
+	color:#fff;
+	background:#660000;
+}
+
+.form{
+	width:120%;
+	padding-top:10px;
+	clear:both;
+}
+
+.form-input1{
+    float:left;
+	width:50%;
+}
+.form-input2{
+	float:right;
+	width:50%;
+}
+.frm1{
+	float:left;
+	}	
+.frm2{
+	float:right;
+    margin-right:-259px;
+	}
+.frm2 input{
+	width:198px;
+}
+.frm3{
+	float:center;
+	}
+.frm3 input{
+	width:180px;
+}			
+
+/* Add some margins for each label */
+.form label {
+   font-family:roboto;
+   font-size:20px;
+}
+
+/* Style the input fields */
+.form input {
+
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+
+/* ------------------------------------------
+ hotels
+--------------------------------------------- */
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: arial;
+  background:#fff;
+  color:grey;
+}
+
+.img{
+	width:450px;
+	height:300px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #660000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.lf{
+	float:left;
+}
+.rf{
+	float:right;
+}
+.p{
+	padding:5px;
+}
+
+/* ------------------------------------------
+ flights
+--------------------------------------------- */
+
+.column {
+  margin-top:20px;	
+  float: left;
+  padding: 10px;
+  height: 300px; 
+  color:grey;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 50%;
+}
+
+
+
+
+/* ------------------------------------------
+ tab & intro
+--------------------------------------------- */
+
+
+
+@media(max-width:786px){
+	.line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+   a.icon {
+ 
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 45px;
+}
+
+	
+	.nav-responsive{
+		display:none;
+		background-color:black;
+		opacity:0.5;
+	}
+
+	.nav-responsive.responsive {position: relative;}
+    .nav-responsive.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+    .nav-responsive.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+	.menu-toggler{
+    display: block;
+  }
+   
+
+.nav-responsive ul li{
+	display:block;
+	padding:3px;
+	margin-left:60x;
+}
+
+hr, .top-nav  {
+   display:none;
+}
+
+.tabContainer{
+    width: 100%;
+    height: 700px;
+	align:center;
+	margin-top:20px;
+
+}
+
+.tabContainer .tabPanel{
+ 
+   font-size:10px;
+ 
+
+}
+
+.buttons{
+	float:left;
+	padding-top:3px;
+	margin-bottom:5px;
+}
+
+
+.tabContainer .buttonContainer{
+    height: 15%;
+	border-bottom:1px solid #660000;
+
+}
+
+.tabContainer .buttonContainer button{
+    width: 25%;
+	color:#ffffff;
+    height: 100%;
+
+}
+.form{
+	width:100%;
+	padding-top:10px;
+	clear:both;
+}
+
+.form-input1{
+    display:block;
+	width:100%;
+}
+.form-input2{
+	display:block;
+	width:100%;
+}
+.frm1{
+	clear:both;
+	
+	}	
+.frm2{
+	float:left;
+	clear:both;
+	}
+.frm2 input{
+	margin-right:0px;
+	width:230px;
+	
+}
+.frm3{
+float:left;
+clear:both;	
+
+
+	}
+.frm3 input{
+ width:230px;
+	
+}	
+.btn{
+	clear:both;
+}		
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin:4px;
+ 
+}
+
+.img{
+	width:400px;
+	height:300px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+   width: 100%; 
+}
+
+.flights{
+	width:500px;
+	padding-bottom:40px;
+	color:grey;
+	background:#fff;
+	border-radius:10px;
+	box-shadow :0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.left{
+ width:100%;
+}
+.right{
+width:100%;
+}
+
+
+}
+
+
+
